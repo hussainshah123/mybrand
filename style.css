@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #c93fa6;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h2 {
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #128f55; /* Add hover color */
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+.banner {
+    background-image: url('images/banner4.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    height: 500px; /* Set the height of the banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+.banner h1 {
+    font-size: 48px; /* Font size for the title */
+    margin: 0; /* Remove default margin */
+}
+
+.banner p {
+    font-size: 24px; /* Font size for the subtitle */
+}
+#products {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+}
+
+.product-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: white;
+}
+
+.product-item h3 {
+    margin: 0 0 10px 0; /* Margin below the title */
+}
+
+.product-item p {
+    margin: 10px 0; /* Margin around the price */
+}
+
+.product-item button {
+    padding: 10px 15px;
+    background-color: #128f55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #0a6b3e; /* Darker shade on hover */
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

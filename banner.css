@@ -1,0 +1,58 @@
+.featured-products {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.product-card {
+    background-color: white; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    transition: box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.product-card img {
+    width: 100%; /* Image takes full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded image corners */
+}
+
+.product-card h3 {
+    font-size: 20px; /* Product title size */
+    margin: 10px 0; /* Space above and below title */
+}
+
+.product-card p {
+    font-size: 18px; /* Price size */
+    color: #333; /* Price color */
+}
+
+.buy-button {
+    background-color: #128f55; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.buy-button:hover {
+    background-color: #0a6b3e; /* Darker green on hover */
+}

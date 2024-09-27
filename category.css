@@ -1,0 +1,49 @@
+.jeans-category {
+    position: relative; /* Position relative for absolute positioning of the headings */
+    padding-top: 50px; /* Space for the fixed headings */
+}
+
+.jeans-category h1,
+.jeans-category h2 {
+    position: absolute; /* Fix position of headings */
+    left: 0;
+    right: 0;
+    text-align: center; /* Center the text */
+    background-color: #fff; /* Background color to cover content while scrolling */
+    z-index: 1; /* Ensure headings stay above the content */
+    margin: 0;
+    padding: 10px 0; /* Add some padding for better appearance */
+}
+
+.jeans-category h1 {
+    top: 10px; /* Position of the main heading */
+}
+
+.jeans-category h2 {
+    top: 50px; /* Position of the subheading */
+}
+
+.jeans-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.jeans-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.jeans-item {
+    margin: 10px;
+    min-width: 300px; /* Increase minimum width for larger images */
+    text-align: center;
+}
+
+.jeans-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    max-height: 300px; /* Optional: Set a maximum height */
+}
